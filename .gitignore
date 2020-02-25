@@ -1,4 +1,6 @@
 _site
+.bundle
+.firebase
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
