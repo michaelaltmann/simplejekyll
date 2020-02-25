@@ -1,8 +1,8 @@
 before_install:
   - gem install bundler
 before_deploy:
-  - echo "Building..."
-#  - jekyll build
+  - echo "Invoking jekyll build"
+  - jekyll build
 deploy:
   provider: firebase
   token: $TRAVIS_TOKEN
