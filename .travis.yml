@@ -1,5 +1,7 @@
 before_install:
   - gem install bundler
+install: 
+  - gem install jekyll
 before_deploy:
   - echo "Invoking jekyll build"
   - jekyll build
