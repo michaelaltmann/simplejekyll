@@ -17,4 +17,5 @@ script:
 deploy:
   provider: firebase
   token: $TRAVIS_TOKEN
+  skip_cleanup: true
   local-dir: ./_site
