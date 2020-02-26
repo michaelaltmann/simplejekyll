@@ -1,12 +1,14 @@
-language: ruby
-rvm:
-  - 2.6 
+#language: ruby
+#rvm:
+#  - 2.6 
 cache: bundler
 before_install:
   - gem install bundler jekyll 
 script:
   - echo "Invoking jekyll build"
-  - jekyll build
+  - jekyll build --destination _site
+  - ls _site
 deploy:
   provider: firebase
   token: $TRAVIS_TOKEN
+  local-dir: ./_site
